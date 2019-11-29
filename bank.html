@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="">
+    <meta name="description" content="Håndlavede møbler i træ i Aarhus">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>TÅP craft</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.next').on('click', function() {
+                var currentImg = $('.active');
+                var nextImg = currentImg.next();
+
+                if (nextImg.length) {
+                    currentImg.removeClass('active').css('z-index', -10);
+                    nextImg.addClass('active').css('z-index', 10);
+                }
+            });
+
+            $('.prev').on('click', function() {
+                var currentImg = $('.active');
+                var prevImg = currentImg.prev();
+
+                if (prevImg.length) {
+                    currentImg.removeClass('active').css('z-index', -10);
+                    prevImg.addClass('active').css('z-index', 10);
+                }
+            });
+        });
+    </script>
+</head>
+
+<header>
+    <div class="flex-container">
+        <div>
+            <a href="index.html"><img id="logo" alt="TÅPlogo" src="images/logo.png" /></a>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Produkter.</a></li>
+                <li><a href="om.html">Om.</a></li>
+                <li><a href="kontakt.html">Kontakt.</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+
+
+    <div class="container">
+        <div class="slider-outer">
+            <img class="prev" alt="Prev" src="images/pil-venstre.png" style="width: 28px;">
+            <div class="slider-inner">
+                <img class="active" src="images/bank/2.jpg">
+                <img src="images/bank/1.jpg">
+                <img src="images/bank/3.jpg">
+            </div>
+            <img class="next" alt="Next" src="images/pil-hoejre.png" style="width: 28px;">
+        </div>
+    </div>
+
+    <div>
+        <div class="omafsnit1">
+            <div class="tekst1">
+                <h1 class="om1">Bænk</h1>
+                <p class="omtekst1">Taburetten er et simpelt og funktionelt møbel, der passer i hvert et hjem. Herunder kan du bestille taburetten i forskellige træsorter. <br>
+                </p>
+                <p class="pris">
+                    .ask 1200 kr.<br>.røget eg 1200 kr.<br>.eg 1200 kr.
+                </p>
+                <p class="omtekstkursiv1">
+                    Bemærk at bestillingen først er fuldt gennemført, når betalingen er overført. Du får efter bestilling en mail som bekræftelse, som indeholder yderligere informationer.
+                </p>
+                <a href="bankbestilling.html"><img id="bestilknap" src="images/bestilknap.png" style="width: 70px;"></a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

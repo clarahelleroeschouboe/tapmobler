@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="">
+    <meta name="description" content="Håndlavede møbler i træ i Aarhus">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>TÅP craft</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+  $('.next').on('click', function(){
+    var currentImg = $('.active');
+    var nextImg = currentImg.next();
+
+    if(nextImg.length){
+      currentImg.removeClass('active').css('z-index', -10);
+      nextImg.addClass('active').css('z-index', 10);
+    }
+  });
+
+  $('.prev').on('click', function(){
+    var currentImg = $('.active');
+    var prevImg = currentImg.prev();
+
+    if(prevImg.length){
+      currentImg.removeClass('active').css('z-index', -10);
+      prevImg.addClass('active').css('z-index', 10);
+    }
+  });
+});
+    
+
+    </script>
+</head>
+
+<header>
+    <div class="flex-container">
+        <div>
+            <a href="index.html"><img id="logo" alt="TÅPlogo" src="images/logo.png" /></a>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Produkter.</a></li>
+                <li><a href="om.html">Om.</a></li>
+                <li><a href="kontakt.html">Kontakt.</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+
+
+    <div class="container">
+        <div class="slider-outer">
+            <img class="prev" alt="Prev" src="images/pil-venstre.png" style="width: 28px;">
+            <div class="slider-inner">
+                <img class="active" src="images/taburet/3.jpg">
+                <img src="images/taburet/1.jpg">
+                <img src="images/taburet/2.jpg">
+            </div>
+            <img class="next" alt="Next" src="images/pil-hoejre.png" style="width: 28px;">
+        </div>
+    </div>
+
+    <div>
+
+        <div class="container1">
+            <form action="action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="navn">Fulde navn</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="navn" name="navn" placeholder="Fornavn, efternavn">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="nummermail">Tlf. / e-mail</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="nummermail" name="nummermail" placeholder="Telefon / e-mail">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="emne">Træsort (vælg)</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="emne" name="emne">
+                            <option value="findmakker">Ask (1200 kr.)</option>
+                            <option value="råd">Røget eg (1200 kr.)</option>
+                            <option value="ideer">Eg (1200 kr.)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="opslag">Kommentar</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="opslag" name="opslag" placeholder="Skriv i dette felt for yderligere kommentarer, forespørgsler eller spørgsmål" style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Bestil">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

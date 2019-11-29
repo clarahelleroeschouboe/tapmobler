@@ -1,0 +1,385 @@
+header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 30px;
+    position: relative;
+    margin-right: 0px;
+
+
+}
+
+header #logo {
+    float: left;
+    width: 80px;
+    margin-bottom: 0px;
+    margin-top: -10px;
+    margin-left: 30px;
+}
+
+body {
+    
+}
+
+.nav {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    margin-left: 880px;
+}
+
+.nav * {
+    box-sizing: border-box;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: inside;
+    margin: .5em 1em;
+    padding: 0;
+}
+
+.nav a {
+    padding: .5em .8em;
+    color: #283582;
+    position: relative;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.nav a::before,
+.nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    opacity: 0;
+}
+
+.nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #283582;
+    transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.nav a:hover {
+    color: #283582;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.flex-container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-right: 0px;
+    margin-left: 40px;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: row;
+    margin: -20px;
+}
+
+.beskrivelse {
+    color: #283582;
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    justify-content: flex-end;
+    margin-left: 70px;
+    font-weight: 700;
+    margin-top: -25px;
+}
+
+.maal {
+    color: #283582;
+    font-size: 9px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    justify-content: flex-end;
+    margin-left: 70px;
+    font-weight: 100;
+    margin-top: -5px;
+}
+
+
+
+.om {
+    color: #283582;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-weight: 520;
+}
+
+.omtekst {
+    color: #283582;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.omtekst1 {
+    color: #283582;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+.omafsnit {
+    width: 33%;
+    margin-left: 200px;
+    margin-top: 80px;
+    flex-direction: row;
+    display: flex;
+
+}
+
+.omtekstkursiv {
+    color: #283582;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    text-align-last: justify;
+    font-style: italic;
+}
+
+.tekst {
+    margin-left: 575px;
+    margin-top: -500px;
+    width: 450px;
+}
+
+
+#imgom {
+    margin-top: -80px;
+    margin-left: -30px;
+}
+
+
+
+.container{
+	width: 620px;
+	margin: 40px;
+	overflow: auto;
+    margin-right: 550px;
+     margin-top: 0px;
+    z-index: -1;
+    
+}
+
+.slider-inner{
+	width: 500px;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	padding: 3px;
+     position: relative;
+ 
+    
+}
+
+.slider-inner img{
+	display: none;
+	width: 100%;
+	height: 100%;
+    margin-left: -10px;
+    position: relative;
+       top: -100px;
+   
+}
+
+.slider-inner img.active{
+	display: inline-block;
+}
+
+.prev,.next{
+	float: left;
+	margin-top: 190px;
+    margin-left: 17px;
+	cursor: pointer;
+}
+
+.prev{
+	position: relative;
+	margin-right: -45px;
+	z-index: 100;
+    width: 35px;
+}
+
+.next{
+	position: relative;
+	margin-left: -45px;
+	z-index: 100;
+    width: 35px;
+}
+
+.om1 {
+    color: #283582;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-weight: 520;
+}
+
+.omtekst1 {
+    color: #283582;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.pris {
+    color: #283582;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+.omafsnit1 {
+    width: 80%;
+    margin-left: 200px;
+    margin-right: 0px;
+    margin-top: 190px;
+    flex-direction: row;
+    display: flex;
+
+}
+
+.omtekstkursiv1 {
+    color: #283582;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    text-align-last: justify;
+    font-style: italic;
+}
+
+.tekst1 {
+    margin-left: 575px;
+    margin-top: -650px;
+    width: 100%;
+}
+
+#bestilknap {
+width: 80px;
+    margin-left: 180px;
+    margin-top: 30px;
+}
+
+nput[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=submit] {
+    background-color: #26377f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.container1 {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 450px;;
+    margin-left: 707px;
+    margin-top: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #26377f;
+    font-size: 12px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 5px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 12px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#opslag {
+font-family: 'Roboto', sans-serif;
+}
+
+#kontakt {
+margin-top: 150px;
+    
+}
+
+#tekst1 {
+    margin-left: 575px;
+    margin-top: -270px;
+    width: 450px;
+}
+
+#portrat {
+width: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    display: flex;
+}
+
+
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}

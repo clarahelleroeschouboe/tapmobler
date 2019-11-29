@@ -1,0 +1,4 @@
+[1128/213019.935:ERROR:process_info.cc(359)] UncheckedAllocate
+[1128/214306.041:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\Clara\AppData\Roaming\Brackets\live-dev-profile\Crashpad\reports\6edb0ede-79a6-4d1b-ab26-f134242ee72e.dmp: Processen kan ikke få adgang til filen, da den bruges af en anden proces. (0x20)
+[1129/103431.372:ERROR:process_info.cc(359)] UncheckedAllocate
+[1129/103436.343:ERROR:process_info.cc(359)] UncheckedAllocate
